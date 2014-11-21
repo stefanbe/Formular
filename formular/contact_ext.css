@@ -1,0 +1,17 @@
+
+.fm-name-contact_ext .fm-noms {
+    border: none;
+    display:none;
+    color: #880000;
+    background-color: transparent;
+    margin: 0;
+}
+
+.fm-name-contact_ext .fm-ms, .fm-mandatory, .fm-mailvalid, .fm-senttoofast, .fm-mailcopy, .fm-spamtask, .fm-success {
+    display:block !Important;
+}
+
+.fm-ext .fm-mandatory, .fm-ext .fm-mailvalid, .fm-ext .fm-mailcopy, .fm-ext .fm-spamtask {
+    font-weight: normal;
+}
+

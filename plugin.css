@@ -1,0 +1,156 @@
+.fm-form {
+}
+
+.fm-mandatory, .fm-mailvalid, .fm-senttoofast, .fm-mailcopy, .fm-spamtask, .fm-success {
+    color: #880000;
+    border: 1px solid #880000;
+    background-color: #fef1ec;
+    font-weight: bold;
+    margin: .5em .8em;
+}
+
+.fm-success {
+    color: #008800;
+    border: 1px solid #008800;
+    background-color: #ecffe0;
+}
+
+.fm-mandatory-nodisplay, .fm-success-nodisplay, .fm-mailvalid-nodisplay, .fm-senttoofast-nodisplay, .fm-mailcopy-nodisplay, .fm-spamtask-nodisplay {
+    display: none;
+}
+
+.fm-box-type {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.fm-box-success, .fm-box-error {
+    border: 1px solid #008800;
+    background-color: #ecffe0;
+    margin-bottom: 1em;
+}
+
+.fm-box-error {
+    border: 1px solid #880000;
+    background-color: #fef1ec;
+}
+
+.fm-box-error .fm-mandatory, .fm-box-error .fm-mailvalid, .fm-box-error .fm-senttoofast, .fm-box-error .fm-mailcopy, .fm-box-error .fm-spamtask, .fm-box-success .fm-success {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.fm-mo-elm {
+    display: none !Important;
+}
+
+.fm-ma-elm {
+    color: #880000;
+}
+
+.fm-form input, .fm-form textarea {
+    color: inherit;
+    font-family: inherit;
+}
+
+.fm-form input[type=text], .fm-form textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fm-form input[type=text].fm-ma-elm, .fm-form textarea.fm-ma-elm {
+    border: 1px solid #880000 !Important;
+}
+
+/*
+    Styles für das Formular "contact" (formular/contact.php)
+    sind hier damit sie mit dem moziloCMS Admin bearbeitet werden können
+    Die Classe .fm-name-contact wurde vom Plugin Erzeugt aus .fm-name-(Name des Formulars)
+*/
+
+.fm-name-contact .table-div, .fm-name-contact .td-div-col2 {
+    display: table;
+    width: 70%;
+    min-width: 310px;
+   /* margin: 0 auto;*/
+}
+
+.fm-name-contact .fm-cursor {
+    cursor: pointer;
+}
+
+.fm-name-contact .tr-div {
+    display: table-row;
+}
+
+.fm-name-contact .fm-nodisplay {
+    display: none;
+}
+
+.fm-name-contact .fm-display {
+    color: #880000;
+    display: table-row;
+}
+
+.fm-name-contact .td-div, .fm-name-contact .td-div-col2 {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    padding-bottom: .8em;
+}
+
+.fm-name-contact .td-div-col2 {
+    display: block;
+}
+
+.fm-name-contact .td-left {
+    width: 30%;
+    min-width: 100px;
+    padding-right: 10px;
+}
+
+.fm-name-contact .td-top {
+    vertical-align: top;
+}
+
+.fm-name-contact .td-right {
+    text-align: right;
+}
+
+.fm-name-contact .td-center {
+    text-align: center;
+}
+
+.fm-name-contact input[type=text], .fm-name-contact textarea {
+    width: 100%;
+    margin: 0;
+    padding: .2em .4em;
+}
+
+.fm-name-contact input[type=checkbox] {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .fm-name-contact input, .fm-name-contact textarea {
+        font-size: inherit;
+    }
+
+    .fm-name-contact .table-div, .fm-name-contact .tr-div, .fm-name-contact .td-div, .fm-name-contact .td-div-col2 {
+        display: block;
+        width: 100%;
+    }
+
+    .fm-name-contact .td-right {
+        text-align: left;
+    }
+
+    .fm-name-contact .td-left {
+        padding-bottom: 0;
+    }
+}
+
