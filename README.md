@@ -1,4 +1,1 @@
-Formular
-========
-
 moziloCMS Formular Plugin
