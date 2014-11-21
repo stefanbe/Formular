@@ -1,0 +1,24 @@
+# Formular
+*.*
+!.gitignore
+!README.md
+!index.php
+
+*/
+!lang/
+
+# formular
+kategorien/*
+!kategorien/contact.php
+!kategorien/contact_ext.php
+!kategorien/contact_ext.css
+
+# algemein
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
