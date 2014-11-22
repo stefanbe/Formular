@@ -1,1 +1,4 @@
-moziloCMS Formular Plugin
+Formular
+========
+
+moziloCMS 2.0 Plugin
