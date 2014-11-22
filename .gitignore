@@ -6,12 +6,13 @@
 
 */
 !lang/
+!lang/*
 
 # formular
-kategorien/*
-!kategorien/contact.php
-!kategorien/contact_ext.php
-!kategorien/contact_ext.css
+formular/*
+!formular/contact.php
+!formular/contact_ext.php
+!formular/contact_ext.css
 
 # algemein
 .DS_Store
