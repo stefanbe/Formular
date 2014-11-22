@@ -1,8 +1,8 @@
 info            = Es werden Formulardateien verwendet zur Erzeugung des Formulares.<br />Die Angabe der Formulardatei im Plugin Platzhalter ist Pflicht z.B. <b>{Formular|contact}</b>.<br />Ausführliche Informationen zu erstellung einer Formulardatei sind in der <a href="{PARAM1}README.htm" target="_blank"><b>README</b></a> zu finden.
-noformularfiles = kein Formulardateien Verfügbar
+noformularfiles = keine Formulardateien Verfügbar
 formularfiles   = Verfügbare <b>Formulardateien:</b>
 spam_task       = Spam Aufgaben
-formwaittime    = Aller wieviel Sekunden darf ein Besucher eine neue Nachricht über das Formular versenden?
+formwaittime    = Alle wieviel Sekunden darf ein Besucher eine neue Nachricht über das Formular versenden?
 formwaittime_error = Nur Zahlen sind Erlaubt
-frommail        = <b>Absender E-Mail.</b><br /><b>Achtung</b> eine in der Formulardatei Eingetrage E-Mail Adresse übergeht diese.
-tomail          = <b>Empfänger E-Mail Adressen.</b><br />Die <b>Absender E-Mail.</b> wird Benutzt wenn hier nichts Eingetragen ist.<br />Bei mehreren E-Mails müssen sie durch ein <b>Komma</b> getrent werden.<br /><b>Achtung</b> eine in der Formulardatei Eingetrage E-Mail Adresse übergeht diese.
+frommail        = <b>Absender E-Mail.</b><br /><b>Achtung</b> eine in der Formulardatei eingetragene E-Mail Adresse übergeht diese.
+tomail          = <b>Empfänger E-Mail Adressen.</b><br />Die <b>Absender E-Mail.</b> wird benutzt wenn hier nichts eingetragen ist.<br />Bei mehreren E-Mails müssen sie durch ein <b>Komma</b> getrennt werden.<br /><b>Achtung</b> eine in der Formulardatei eingetrage E-Mail Adresse übergeht diese.
