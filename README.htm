@@ -45,24 +45,24 @@
         </style>
     </head>
     <body>
-<h1>Anleitung zur Erstellung eines Formulares</h1>
+<h1>Anleitung zur Erstellung eines Formulars</h1>
 
-<h2>HTML und CSS Kenntnisse sind Nötig</h2>
+<h2>HTML- und CSS-Kenntnisse werden benötigt!</h2>
 
 <h2>Generelles:</h2>
 <ul>
-    <li>Die Formulardateien müssen im Ordner "formular" des Plugins sein und müssen die Endung ".php" haben.</li>
+    <li>Die Formulardateien müssen im Ordner "formular" des Plugins sein und die Endung ".php" haben.</li>
     <li>Der Name der Formulardateien ohne ".php" ist auch gleich der Parameter für den Plugin Platzhalter.</li>
-    <li>Fals es eine CSS Datei mit gleichen Namen im Ordner "formular" gibt wird sie Automatisch geladen.</li>
+    <li>Falls es eine CSS-Datei mit gleichem Namen im Ordner "formular" gibt, wird sie automatisch geladen.</li>
 </ul>
 
 <h2>Der Inhalt einer Formulardatei:</h2>
 <ul>
-    <li>in der Ersten Zeile muss "&lt;?php if(!defined('IS_CMS')) die(); ?&gt;" Stehen.</li>
-    <li>Danach ist nur HTML Quelltext erlaubt.</li>
-    <li>Das HTML &lt;form&gt;&lt;/form&gt; darf nicht Benutzt werden da es vom Plugin Erstellt wird.</li>
+    <li>In der ersten Zeile muss "&lt;?php if(!defined('IS_CMS')) die(); ?&gt;" stehen.</li>
+    <li>Danach ist nur HTML-Quelltext erlaubt.</li>
+    <li>Das HTML &lt;form&gt;&lt;/form&gt; darf nicht benutzt werden, da es vom Plugin erstellt wird.</li>
     <li>
-        <h5>Diese HTML Formular Elemente werden für die E-Mail Verwendet:</h5>
+        <h5>Diese HTML-Formular-Elemente werden für die E-Mail verwendet:</h5>
         <div class="ma-left">
             &lt;input type="(text, radio, checkbox, submit, reset)" /&gt;<br />
             &lt;textarea&gt;&lt;/textarea&gt;<br />
@@ -80,24 +80,24 @@
     </li>
 </ul>
 
-<h2>Generelle Regeln für HTML Formular Elemente:</h2>
+<h2>Generelle Regeln für HTML-Formular-Elemente:</h2>
 <ul>
-    <li>Gemerell darf der Inhalt der Atribute name="" und id="" nur Einmal vorkommen.</li>
-    <li>Außer bei den Elementen vom Type "radio" und "checkbox" wenn mann eine Gruppe bilden möchte ist der Inhalt von name="" gleich um die Gruppe bilden zu können.</li>
-    <li>Bei allen Elemnten ist das name="" Attriebut mit Inhalt Pflicht.</li>
-    <li>Bei den HTML Formular Elementen vom type="text" muss das Attriebut value="" Angegeben werden mit Lehren Inhalt.</li>
-    <li>Bei allen Anderen Formular Elementen Auser der "textarea" muss ein Attriebut value="" Angegeben werden mit entsprechenden Inhalt.</li>
-    <li>Bei einenm select HTML Formular Element was nicht das Attriebut "multiple" hat kann das Plugin nur dann Erkennen das nichts Selectiert wurde wenn das erste option Element kein Attriebut value="" hat z.B. &lt;option&gt;Wählen sie was aus&lt;/option&gt;</li>
-    <li>Bei HTML Formular Elementen mit dem name="ASTALAVISTA(_Zahl)" solte man es den Spammern Erschweren in dem mann sie als Pflichtfeld definiert mit einem Glaubwürdigen Label und wenn möglich sie nicht direckt mittels CSS auf display:none zu setzen. Beispiel siehe contact.php</li>
+    <li>Generell darf der Inhalt der Attribute name="" und id="" nur einmal vorkommen.</li>
+    <li>Außer bei den Elementen vom Type "radio" und "checkbox": Wenn man eine Gruppe bilden möchte, ist der Inhalt von name="" gleich, um die Gruppe bilden zu können.</li>
+    <li>Bei allen Elementen ist das name="" Attribut mit Inhalt Pflicht.</li>
+    <li>Bei den HTML-Formular-Elementen vom type="text" muss das Attribut value="" angegeben werden mit leerem Inhalt.</li>
+    <li>Bei allen anderen Formular-Elementen außer der "textarea" muss ein Attribut value="" angegeben werden mit entsprechendem Inhalt.</li>
+    <li>Bei einem select HTML-Formular-Element, welches nicht das Attribut "multiple" besitzt, kann das Plugin nur dann erkennen, dass nichts selectiert wurde, wenn das erste Option-Element kein Attribut value="" hat, z.B. &lt;option&gt;Wählen sie was aus&lt;/option&gt;</li>
+    <li>Bei HTML-Formular-Elementen mit dem name="ASTALAVISTA(_Zahl)" solte man es den Spammern erschweren, indem man sie als Pflichtfeld definiert mit einem glaubwürdigen Label und - wenn möglich - sie nicht direkt mittels CSS auf display:none zu setzen. Beispiel siehe contact.php</li>
 </ul>
 
-<h2>Inhalt aus der Sprachdatei Benutzen "lang/formular_(Language Einstellung des CMS).txt"</h2>
+<h2>Inhalt aus der Sprachdatei benutzen: "lang/formular_(Language Einstellung des CMS).txt"</h2>
 <ul>
-    <li>Alle Einträge können Verwendet werden.</li>
-    <li>Es dürfen auch da Platzhalter Verwendet werden z.B. "{DATUM}".</li>
-    <li>Auch eigene können Erstelt werden, sie müssen dann mit "usertext_" Anfangen.</li>
-    <li>Die Platzhalter werden aus dem Name des Eintrags Erstellt in dem der Anfang
-    ("formular_" oder "usertext_") Entfernt wird und der Rest in Großbuchstaben Umgewandelt wird.
+    <li>Alle Einträge können verwendet werden.</li>
+    <li>Es dürfen dort auch Platzhalter verwendet werden z.B. "{DATUM}".</li>
+    <li>Auch eigene Texte/Angaben können erstellt werden, sie müssen dann mit "usertext_" anfangen.</li>
+    <li>Die Platzhalter werden aus dem Namen des Eintrags erstellt, indem der Anfang
+    ("formular_" oder "usertext_") entfernt und der Rest in Großbuchstaben umgewandelt wird.
         <h5>Beispiele:</h5>
         <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
             <tr>
@@ -110,10 +110,10 @@
             </tr>
         </tbody></table>
     </li>
-    <li>Achtung es macht nur sin die Sparachdatei zu nutzen bei mehrere Sprachen.</li>
+    <li><b>Achtung!</b> Es macht nur Sinn, bei mehreren Sprachen die Sprachdatei zu nutzen.</li>
 </ul>
 
-<h2>Besonderer Inhalt für das name="" Attriebut der HTML Formular Elemente:</h2>
+<h2>Besonderer Inhalt für das name="" Attribut der HTML-Formular-Elemente:</h2>
 <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
     <tr>
         <td align="left" valign="top" class="td-left">type_mail</td>
@@ -122,121 +122,121 @@
     <tr>
         <td align="left" valign="top" class="td-left">type_mail_cc</td>
         <td align="left" valign="top" class="pa-left">ist für ein HTML Formular Checkbox Element. Wenn das Häckchen gesetzt ist wird die Inhalt des HTML Formular Elements mit dem name="type_mail" Benutzt um eine Kopie der E-Mail an diese zu Senden.
-        <h5>Tip wenn immer eine Kopie gesendet werden soll:</h5>
-        <div class="ma-left">Das HTML Element name="type_mail" zum Pflichtfeld machen.<br />
-            Das HTML Element name="type_mail_cc" mit dem Attriebut checked="checked" versehen
+        <h5>Tipp, wenn <u>immer</u> eine Kopie gesendet werden soll:</h5>
+        <div class="ma-left">Das HTML-Element name="type_mail" zum Pflichtfeld machen.<br />
+            Das HTML-Element name="type_mail_cc" mit dem Attribut checked="checked" versehen
             und es über CSS auf display:none setzen</div>
         </td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">type_title</td>
-        <td align="left" valign="top" class="pa-left">Wird nur für den Platzhalter {TITLE} Verwendet</td>
+        <td align="left" valign="top" class="pa-left">Wird nur für den Platzhalter {TITLE} verwendet</td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">type_forename</td>
-        <td align="left" valign="top" class="pa-left">Wird nur für den Platzhalter {FORENAME} Verwendet</td>
+        <td align="left" valign="top" class="pa-left">Wird nur für den Platzhalter {FORENAME} verwendet</td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">type_name</td>
-        <td align="left" valign="top" class="pa-left">Wird nur für den Platzhalter {NAME} Verwendet</td>
+        <td align="left" valign="top" class="pa-left">Wird nur für den Platzhalter {NAME} verwendet</td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">SUBMIT(_Zahl)</td>
-        <td align="left" valign="top" class="pa-left">Absende Button. Bei mehreren ist die Angabe (_Zahl) zu Vwerwenden z,B. SUBMIT_1, SUBMIT_2 u.s.w.</td>
+        <td align="left" valign="top" class="pa-left">Absende-Button. Bei mehreren ist die Angabe (_Zahl) zu werwenden z.B. SUBMIT_1, SUBMIT_2 usw.</td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">SPAM_TASK</td>
-        <td align="left" valign="top" class="pa-left">Für das Lösungs Element der Spam Frage. Die Spam Frage wird mit Platzhalter {SPAM_TASK} gestelt.</td>
+        <td align="left" valign="top" class="pa-left">Für das Lösungs-Element der Spam-Frage. Die Spam-Frage wird mit dem Platzhalter {SPAM_TASK} gestellt.</td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">ASTALAVISTA_(Zahl)</td>
-        <td align="left" valign="top" class="pa-left">Irgend ein HTML Formular Elemente das wenn es Verändert wird den Absender als Spammer Erkent. Bei mehreren ist die Angabe (_Zahl) zu Vwerwenden z,B. ASTALAVISTA_1, ASTALAVISTA_2 u.s.w.</td>
+        <td align="left" valign="top" class="pa-left">Irgend ein HTML-Formular-Elemente das, wenn es verändert wird, den Absender als Spammer erkennt. Bei mehreren ist die Angabe (_Zahl) zu werwenden z,B. ASTALAVISTA_1, ASTALAVISTA_2 usw.</td>
     </tr>
 </tbody></table>
 
-<h2>Vorgegebene HTML Classnamen für HTML Elemente:</h2>
+<h2>Vorgegebene HTML-Classnamen für HTML-Elemente:</h2>
 <div class="ma-left">
-    <h3 class="ma-notop">Für Meldungs HTML Elemente:</h3>
+    <h3 class="ma-notop">Für Meldungs-HTML-Elemente:</h3>
     <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
         <tr>
             <td align="left" valign="top" class="td-left">fm-success-nodisplay</td>
-            <td align="left" valign="top" class="pa-left">Erfolgreich Versendet.</td>
+            <td align="left" valign="top" class="pa-left">Erfolgreich versendet.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">fm-mandatory-nodisplay</td>
-            <td align="left" valign="top" class="pa-left">nicht alle Pflicht Felder wurden Ausgefühlt.</td>
+            <td align="left" valign="top" class="pa-left">Nicht alle Pflichtfelder wurden ausgefüllt.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">fm-mailvalid-nodisplay</td>
-            <td align="left" valign="top" class="pa-left">E-Mail Adresse nicht gühltig.</td>
+            <td align="left" valign="top" class="pa-left">E-Mail Adresse nicht gültig.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">fm-senttoofast-nodisplay</td>
-            <td align="left" valign="top" class="pa-left">Die Absende Wartezeit ist noch nicht Abgelaufen.</td>
+            <td align="left" valign="top" class="pa-left">Die Absende-Wartezeit ist noch nicht abgelaufen.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">fm-mailcopy-nodisplay</td>
-            <td align="left" valign="top" class="pa-left">Es wurde keine E-Mail Adresse im HTML Formular Element name="type_mail" Eingetragen und das HTML Formular Element name="type_mail_cc" ist Aktiv deshalb kann keine Kopie Versendet werden.</td>
+            <td align="left" valign="top" class="pa-left">Es wurde keine E-Mail Adresse im HTML-Formular-Element name="type_mail" eingetragen und das HTML-Formular-Element name="type_mail_cc" ist aktiv, deshalb kann keine Kopie versendet werden.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">fm-box-type</td>
-            <td align="left" valign="top" class="pa-left">Wird bei eintreten eines Ereignisses zu "fm-box-success" oder ".fm-box-error".<br />Kann Benutzt werden um alle Meldungen in einer Box unterzubringen.</td>
+            <td align="left" valign="top" class="pa-left">Wird beim Eintreten eines Ereignisses zu "fm-box-success" oder ".fm-box-error".<br />Kann benutzt werden, um alle Meldungen in einer Box unterzubringen.</td>
         </tr>
     </tbody></table>
-    <div class="ma-left ma-top">Bei eintreten eines Ereignisses wird aus dem Entsprechenden Classnamen "-nodisplay" Entfernt.<br />
-        Wenn einer dieser Classnamen nicht Verwendet wird gibts auch für dieses Ereigniss keine Meldung.
+    <div class="ma-left ma-top">Beim Eintreten eines Ereignisses wird aus dem entsprechenden Classnamen "-nodisplay" entfernt.<br />
+        Wenn einer dieser Classnamen nicht verwendet wird, gibt es auch für dieses Ereignis keine Meldung.
         <h5>Beispiel:</h5>
         <ul>
-            <li>ein Pflicht HTML Formular Element wurde nicht Ausgefühlt dann wird aus
-                <div class="ma-left">&lt;div class="fm-mandatory-nodisplay"&gt;Pflicht Felder nicht Ausgefühlt&lt;/div&gt;</div></li>
+            <li>Ein Pflicht-HTML-Formular Element wurde nicht ausgefüllt, dann wird aus
+                <div class="ma-left">&lt;div class="fm-mandatory-nodisplay"&gt;Pflichtfelder nicht ausgefüllt&lt;/div&gt;</div></li>
             <li>das
-                <div class="ma-left">&lt;div class="fm-mandatory"&gt;Pflicht Felder nicht Ausgefühlt&lt;/div&gt;</div></li>
+                <div class="ma-left">&lt;div class="fm-mandatory"&gt;Pflichtfelder nicht ausgefüllt&lt;/div&gt;</div></li>
         </ul>
     </div>
-    <h3>Für HTML Elemente:</h3>
+    <h3>Für HTML-Elemente:</h3>
     <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
         <tr>
             <td align="left" valign="top" class="td-left">ein_class_name-mailnovalid</td>
-            <td align="left" valign="top" class="pa-left">Wenn im HTML Formular Element mit dem name="type_mail" keine gültige E-Mail Adresse Eingegeben wurde wird "-mailnovalid" aus allen Classnamen Entfernt.</td>
+            <td align="left" valign="top" class="pa-left">Wenn im HTML-Formular-Element mit dem name="type_mail" keine gültige E-Mail Adresse eingegeben wurde, wird "-mailnovalid" aus allen Classnamen entfernt.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">fm-no-mtext</td>
-            <td align="left" valign="top" class="pa-left">HTML Formular Elemente die diesen Classname haben werden nicht im E-Mail Text Verwendet. Weiter Infos siehe "E-Mail".</td>
+            <td align="left" valign="top" class="pa-left">HTML-Formular-Elemente, die diesen Classname haben, werden nicht im E-Mail-Text verwendet. Weitere Infos siehe "E-Mail".</td>
         </tr>
     </tbody></table>
 </div>
 
-<h2>Pflichtfelder Definieren:</h2>
+<h2>Pflichtfelder definieren:</h2>
 <div class="ma-left">
-    Die Pflichtelemente werde über den Classnamen gesteuert.<br />
-    Sobald im Classnamen der Text "-fm-(eine Zahl)-ma" enthalten ist es ein Pflichtelement.<br />
-    Wenn so ein Element nicht Ausgefühlt oder Selectiert wird wird der Text "-fm-(eine Zahl)-ma" aus dem Classnamen entfernt und zwar bei allen die den gleichen Text "-fm-(eine Zahl)-ma" haben.
+    Die Pflichtelemente werden über den Classnamen gesteuert.<br />
+    Sobald im Classnamen der Text "-fm-(eine Zahl)-ma" enthalten ist, ist es ein Pflichtelement.<br />
+    Wenn so ein Element nicht ausgefüllt oder selectiert wird, wird der Text "-fm-(eine Zahl)-ma" aus dem Classnamen entfernt, und zwar bei allen, die den gleichen Text "-fm-(eine Zahl)-ma" haben.
     <h5>Beispiel:</h5>
     <div class="ma-left">&lt;label id="test" class="labelclass-fm-1-ma"&gt;Namen&lt;/label&gt;<br />
         &lt;input type="text" name="test" class="inputclass-fm-1-ma" /&gt;<br />
-        Bei nicht Ausfühlen wird daraus
+        Bei Nichtausfüllen wird daraus
         <div class="ma-left">&lt;label id="test" class="labelclass"&gt;Namen&lt;/label&gt;<br />
             &lt;input type="text" name="test" class="inputclass" /&gt;</div>
-        So kann jetzt die Classen Namen "labelclass" und "inputclass" für die Kentlich machung des nicht Ausgefühlten Elements Verwendet werden.<br />
+        So können jetzt die Classennamen "labelclass" und "inputclass" für die Kenntlichmachung des nicht ausgefüllten Elements verwendet werden.<br />
         Für beide kann natürlich auch nur ein Classname Verwendet werden.
         <div class="ma-left">&lt;label id="test" class="eineclasse-fm-1-ma"&gt;Namen&lt;/label&gt;<br />
             &lt;input type="text" name="test" class="eineclasse-fm-1-ma" /&gt;</div>
     </div>
 </div>
 
-<h2>Platzhalter die im HTML Formular Verwendet werden:</h2>
+<h2>Platzhalter, die im HTML-Formular verwendet werden:</h2>
 <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
     <tr>
         <td align="left" valign="top" class="td-left">{URL_SRC}</td>
-        <td align="left" valign="top" class="pa-left">Der Url Pfad in den Ordner "formular" z.B. für ein Bild oder Javascriptdatei</td>
+        <td align="left" valign="top" class="pa-left">Der Url-Pfad im Ordner "formular", z.B. für ein Bild oder eine Javascriptdatei</td>
     </tr>
     <tr>
         <td align="left" valign="top" class="td-left">{SPAM_TASK}</td>
-        <td align="left" valign="top" class="pa-left">Die Spam Frage zu dem HTML Formular Elementen mit dem name="SPAM_TASK".</td>
+        <td align="left" valign="top" class="pa-left">Die Spam-Frage zu dem HTML-Formular-Element mit dem name="SPAM_TASK".</td>
     </tr>
 </tbody></table>
 
-<h2>Plugin Eigene Elemente für die E-Mail:</h2>
+<h2>Plugin-eigene Elemente für die E-Mail:</h2>
 <div class="ma-left"><h3 class="ma-notop">Pflicht Elemente:</h3>
     <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
         <tr>
@@ -245,13 +245,13 @@
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">&lt;mail_txt&gt;&lt;/mail_txt&gt;</td>
-            <td align="left" valign="top" class="pa-left">Der E-Mail Text. Enthaltene Zeilenumbrüche, Lehrzeichen und Tabs werden Verwendet.</td>
+            <td align="left" valign="top" class="pa-left">Der E-Mail Text. Enthaltene Zeilenumbrüche, Leerzeichen und Tabs werden verwendet.</td>
         </tr>
     </tbody></table>
-    <h3>Optinale E-Mail Adressen Elemente:</h3>
+    <h3>Optionale E-Mail-Adressen-Elemente:</h3>
     <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
         <tr>
-            <td colspan="2" align="left" valign="top">Wenn Angegeben werden diese Benutzt. Es gelten die gleichen Regeln wie in den Plugin Einstellungen.</td>
+            <td colspan="2" align="left" valign="top">Wenn angegeben, werden diese benutzt. Es gelten die gleichen Regeln wie in den Plugin-Einstellungen.</td>
         <tr>
         <tr>
             <td align="left" valign="top" class="td-left">&lt;mail_from&gt;&lt;/mail_from&gt;</td>
@@ -265,14 +265,14 @@
 </div>
 
 <h2>Eine Selectbox für die Empfänger im Formular</h2>
-<div class="ma-left">Die Selectbox muss ein <b>name</b> Attriebut haben mit dem Inhalt <b>mail_to</b><br />
-und die Option ein <b>value</b> mit einer Fortlaufender <b>Nr.</b> die auf die E-Mails im Plugin (Empfänger E-Mail Adressen.) oder &lt;mail_to&gt;&lt;/mail_to&gt; Zeigen.
+<div class="ma-left">Die Selectbox muss ein <b>name</b> Attribut haben mit dem Inhalt <b>mail_to</b><br />
+und die Option <b>value</b> mit einer fortlaufenden <b>Nr.</b>, die auf die E-Mails im Plugin (Empfänger-E-Mail-Adressen.) oder &lt;mail_to&gt;&lt;/mail_to&gt; zeigt.
 <h3>Beispiel:</h3>
     <div class="ma-left">
         <b>&lt;select name="mail_to"&gt;</b><br />
-            <div class="ma-left"><b>&lt;option value="1"&gt;</b>Demo Empfänger 1<b>&lt;/option&gt;</b><br />
-            <b>&lt;option value="2"&gt;</b>Demo Empfänger 2<b>&lt;/option&gt;</b><br />
-            <b>&lt;option value="3"&gt;</b>Demo Empfänger 3<b>&lt;/option&gt;</b></div>
+            <div class="ma-left"><b>&lt;option value="1"&gt;</b>Demo-Empfänger 1<b>&lt;/option&gt;</b><br />
+            <b>&lt;option value="2"&gt;</b>Demo-Empfänger 2<b>&lt;/option&gt;</b><br />
+            <b>&lt;option value="3"&gt;</b>Demo-Empfänger 3<b>&lt;/option&gt;</b></div>
         <b>&lt;/select&gt;</b><br />
         <b>&lt;mail_to&gt;</b>demo1@mail.de, demo2@mail.de, demo3@mail.de<b>&lt;/mail_to&gt;</b>
     </div>
@@ -287,57 +287,57 @@ und die Option ein <b>value</b> mit einer Fortlaufender <b>Nr.</b> die auf die E
 </tbody></table>-->
 
 <h2>E-Mail</h2>
-<div class="ma-left">Ist einfacher Text.<br />
+<div class="ma-left">Die E-Mail besteht aus einfachem Text.<br />
     Der Inhalt wird mit einen Tab eingerückt.<br />
-    Text und Select Elemente werden nur mit Titel Angezeigt wenn sie Ausgefühlt wurden.
-    <h3>Titel Steuerung:</h3>
+    Text und Select-Elemente werden nur mit Titel angezeigt, wenn sie ausgefüllt wurden.
+    <h3>Titel-Steuerung:</h3>
     <div class="ma-left"><h4 class="ma-notop">Bei den Elementen "input" vom Type "text" und "textarea" und "select"</h4>
-        <div class="ma-left">Wird als Titel das "label" Element verwendet und als Inhalt die "value" oder was zwischen &lt;option&gt;Das hier&lt;/option&gt; steht</div>
+        <div class="ma-left">Als Titel wird das "label" Element verwendet und als Inhalt die "value" oder was zwischen &lt;option&gt;Das hier&lt;/option&gt; steht.</div>
         <h4>Bei den Elementen "input" vom Type "radio" und "checkbox"</h4>
-        <div class="ma-left">Wird das "label" Element als Antword genommen wenn forhanden ansonsten der inhalt von "value".<br />und als Titel wenn Vorhanden das Element mit der id="title_for_(name Attriebut)".</div>
+        <div class="ma-left">Als Antwort wird das "label" Element genommen (wenn vorhanden), ansonsten der Inhalt von "value",<br />und als Titel (wenn vorhanden) das Element mit der id="title_for_(name Attribut)".</div>
         <h4>Classname "fm-no-mtext":</h4>
-            <div class="ma-left">Auf ein Elementen "input", "textarea" und "select" Angewende.
-                <div class="ma-left">Erscheint es mit seinem Titel nicht im Mail Text.</div>
-            Auf einem "label" und id="title_for_(name Attriebut)" Angewende.
-                <div class="ma-left">Erscheint nur der Titel nicht nicht im Mail Text.</div>
-            Wenn ein HTML Element mit dem Classname "fm-no-mtext" Innerhalb eines "label" oder id="title_for_(name Attriebut)" Elementes ist.
-                <div class="ma-left">Wird es Daraus Entfernt.
+            <div class="ma-left">Wird es auf ein Element "input", "textarea" und "select" angewendet,
+                <div class="ma-left">erscheint es mit seinem Titel nicht im Mail-Text.</div>
+            Auf einem "label" und id="title_for_(name Attribut)" angewendet,
+                <div class="ma-left">erscheint nur der Titel nicht im Mail-Text.</div>
+            Wenn sich ein HTML-Element mit dem Classnamen "fm-no-mtext" innerhalb eines "label" oder id="title_for_(name Attribut)" Elementes befindet,
+                <div class="ma-left">wird es daraus entfernt.
                 <h5>Beispiel:</h5>
                     <div class="ma-left">&lt;label for="Text"&gt;Name&lt;span class="fm-no-mtext"&gt; ist Pflicht&lt;/span&gt;&lt;/label&gt;<br />
                     Ergebnis im Mailtext = Name</div></div>
-            Bei HTML Formular Elemente vom Type "type_title", "type_forename" und "type_name" sind sie über die Platzhalter {TITLE}, {FORENAME} und {NAME} Verwendbar.
+            Bei HTML-Formular-Elementen vom Type "type_title", "type_forename" und "type_name" sind sie über die Platzhalter {TITLE}, {FORENAME} und {NAME} verwendbar.
         </div>
     </div>
-    <h3>Platzhalter die verwendet werden:</h3>
+    <h3>Platzhalter, die verwendet werden:</h3>
     <table class="ma-left" cellspacing="0" border="0" cellpadding="0"><tbody>
         <tr>
             <td align="left" valign="top" class="td-left">{MAIL_TEXT}</td>
-            <td align="left" valign="top" class="pa-left">Der aus den Elementen generiete Text ist Pflicht.</td>
+            <td align="left" valign="top" class="pa-left">Der aus den Elementen generierte Text ist Pflicht.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">{DATUM}</td>
-            <td align="left" valign="top" class="pa-left">das Aktuelle Datum.</td>
+            <td align="left" valign="top" class="pa-left">Das aktuelle Datum.</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">{TITLE}</td>
-            <td align="left" valign="top" class="pa-left">Der Inhalt aus dem HTML Formular Element mit dem Namen "type_title"</td>
+            <td align="left" valign="top" class="pa-left">Der Inhalt aus dem HTML-Formular-Element mit dem Namen "type_title"</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">{FORENAME}</td>
-            <td align="left" valign="top" class="pa-left">Der Inhalt aus dem HTML Formular Element mit dem Namen "type_forename"</td>
+            <td align="left" valign="top" class="pa-left">Der Inhalt aus dem HTML-Formular-Element mit dem Namen "type_forename"</td>
         </tr>
         <tr>
             <td align="left" valign="top" class="td-left">{NAME}</td>
-            <td align="left" valign="top" class="pa-left">Der Inhalt aus dem HTML Formular Element mit dem Namen "type_name"</td>
+            <td align="left" valign="top" class="pa-left">Der Inhalt aus dem HTML-Formular-Element mit dem Namen "type_name"</td>
         </tr>
     </tbody></table>
     <h3>Beispiele für E-Mail Elemente:</h3>
-    <div class="ma-left">Absender Mail Adresse
+    <div class="ma-left">Absender Mail-Adresse
             <div class="ma-left">&lt;mail_from&gt;absender@mail.de&lt;/mail_from&gt;</div>
-        An diese Empfänger wird die Mail Gesendet
+        An diese Empfänger wird die Mail gesendet
             <div class="ma-left">&lt;mail_to&gt;empfeanger@mail.de, nocheiner@mail.de&lt;/mail_to&gt;</div>
         Der Betreff
-            <div class="ma-left">&lt;mail_subject&gt;Da hat einer das Formular benutzt am {DATE}&lt;/mail_subject&gt;</div>
+            <div class="ma-left">&lt;mail_subject&gt;Da hat jemand das Formular benutzt am {DATE}&lt;/mail_subject&gt;</div>
         Der Mail Text
             <div class="ma-left">&lt;mail_txt&gt;<br />
                 Danke für ihre<br />
@@ -345,9 +345,9 @@ und die Option ein <b>value</b> mit einer Fortlaufender <b>Nr.</b> die auf die E
                 mfg. Der Absender<br />
             &lt;/mail_txt&gt;</div>
     </div>
-    <h3>Tip:</h3>
-        <div class="ma-left">bei den "label" und "title_for_???" HTML Elementen werden Lehrzeichen und Tabs nicht gelöscht so das sie zur Formatierung vom E-Mail Text Benutzt werden können, auch &lt;br&nbsp;/&gt; werden zu Zeilenumbrüchen.</div>
-    <h3>Beispiel Formular:</h3>
+    <h3>Tipp:</h3>
+        <div class="ma-left">Bei den "label" und "title_for_???" HTML-Elementen werden Leerzeichen und Tabs nicht gelöscht, sodass sie zur Formatierung des E-Mail-Textes benutzt werden können, auch &lt;br&nbsp;/&gt; werden zu Zeilenumbrüchen.</div>
+    <h3>Beispiel-Formular:</h3>
 <pre>    &lt;label for="Text"&gt;Name&lt;/label&gt;&lt;br /&gt;
         &lt;input type="text" name="Text" id="Text" value="" /&gt;
     &lt;span id="title_for_Radio"&gt;Titel Radio&lt;/span&gt;

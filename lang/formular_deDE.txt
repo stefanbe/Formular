@@ -1,14 +1,14 @@
 formular_no_email             = Das Formular kann nicht genutzt werden - keine gültige Absender/Empfangs-Adresse konfiguriert!
 formular_messages_mandatory   = Die Pflichtfelder müssen ausgefüllt/ausgewählt werden.
 formular_messages_success     = Die Nachricht wurde versendet.
-formular_messages_mailvalid   = Die Emailadresse ist nicht gültig
+formular_messages_mailvalid   = Die E-Mail-Adresse ist nicht gültig.
 formular_messages_senttoofast = Sie müssen mindestens {SENDTIME} Sekunden warten, bis Sie Ihre Nachricht absenden dürfen.
-formular_messages_mailcopy    = Die Mailadresse für eine Kopie fehlt
+formular_messages_mailcopy    = Die E-Mail-Adresse für eine Kopie fehlt.
 formular_messages_spamtask    = Die Antwort auf die Spamschutz-Frage war leider falsch.
 formular_spamprotection       = Spamschutz: Bitte geben Sie das Ergebnis der folgenden Aufgabe ein.
 formular_privacy              = Ich habe die Datenschutzbestimmungen gelesen und stimme ihnen zu.
 formular_mandatory            = * Pflichtfeld
-formular_mailcopy             = Ich möchte eine Kopie der E-Mail.
+formular_mailcopy             = Ich möchte eine Kopie der E-Mail erhalten.
 formular_submit               = Absenden
 
 # Einträge für die contact.php
@@ -22,5 +22,5 @@ usertext_user_frau            = Frau
 usertext_user_phone           = Telefon
 
 usertext_user_subject         = Kontaktaufnahme vom {DATE}
-usertext_user_head            = Danke für ihre Kontaktaufnahme
+usertext_user_head            = Vielen Dank für ihre Kontaktaufnahme!
 usertext_user_mfg             = mfg.
