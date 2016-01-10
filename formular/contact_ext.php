@@ -34,7 +34,7 @@
     <div class="tr-div">
         <div class="td-div td-left"><label for="contact_05">{USER_MAIL}</label></div>
         <div class="td-div">
-            <span class="fm-noms fm-ms-mailnovalid">Die E-Mail ist nicht Koreckt</span>
+            <span class="fm-noms fm-ms-mailnovalid">Die E-Mail ist nicht korrekt</span>
             <span class="fm-noms fm-mailcopy-nodisplay">Für eine Kopie wird eine E-Mail Benötigt</span>
             <input class="fm-ma-elm-mailnovalid" type="text" id="contact_05" name="type_mail" value="" /></div>
     </div>
